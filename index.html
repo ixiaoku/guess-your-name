@@ -206,8 +206,8 @@
                 </div>
                 <div>
                     <h4>是否存在你的姓氏</h4>
-                    <input type="radio" name="calculate9" value="1" checked>是<br>
-                    <input type="radio" name="calculate9" value="0">否
+                    <input type="radio" name="calculate9" value="1">是<br>
+                    <input type="radio" name="calculate9" value="0" checked>否
                 </div>
                 <h2>第九张牌</h2>
             </div>
@@ -330,9 +330,10 @@
             "墨哈", "谯笪", "年爱", "阳修", "第五", "言福"
         ];
         if(arr > 486) {
-            alert("您好！！！目前中国百家姓只有486个");
+            alert("您好！！！匹配不到你的姓氏，目前中国百家姓只有486个");
+        } else {
+            alert("您好！！！经过测算你的姓氏是：" + list[arr-1]) 
         }
-        alert("您好！！！经过测算你的姓氏是：" + list[arr-1])
     }
     function getValue(name) {
         const tools = document.getElementsByName(name);
